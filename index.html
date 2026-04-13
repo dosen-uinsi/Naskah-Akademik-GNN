@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Pintar GNN By Mathnology</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .app-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #0d47a1;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+        .header p {
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+        .cover-container {
+            padding: 25px 20px;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .cover-container img {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            border: 2px solid #ffffff;
+        }
+        .menu-container {
+            padding: 25px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .menu-btn {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            background-color: #1976d2;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(25, 118, 210, 0.2);
+        }
+        .menu-btn:hover {
+            background-color: #1565c0;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(25, 118, 210, 0.3);
+        }
+        .menu-btn:active {
+            transform: translateY(0);
+        }
+        /* Style khusus untuk tombol yang belum ada linknya */
+        .menu-btn.disabled {
+            background-color: #9e9e9e;
+            box-shadow: none;
+        }
+        .menu-btn.disabled:hover {
+            background-color: #757575;
+            transform: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <div class="header">
+        <h1>Buku Pintar GNN</h1>
+        <p>Gerakan Numerasi Nasional<br><strong>By Mathnology</strong></p>
+    </div>
+
+    <div class="cover-container">
+        <img src="https://raw.githubusercontent.com/dosen-uinsi/Naskah-Akademik-GNN/refs/heads/main/Cover.jpg" alt="Cover Buku Pintar GNN">
+    </div>
+
+    <div class="menu-container">
+        <a href="#" class="menu-btn disabled" onclick="alert('Maaf, link untuk menu Baca belum tersedia saat ini.'); return false;">Baca</a>
+        
+        <a href="https://dosen-uinsi.github.io/PISA/" class="menu-btn">PISA</a>
+        <a href="https://dosen-uinsi.github.io/Akar-Masalah-dan-Solusi-GNN/" class="menu-btn">Akar Masalah dan Solusi GNN</a>
+        <a href="https://dosen-uinsi.github.io/CATUR-MATRA/" class="menu-btn">Catur Matra</a>
+        <a href="https://dosen-uinsi.github.io/Logical-Framework-GNN/" class="menu-btn">Logical Framework GNN</a>
+    </div>
+</div>
+
+</body>
+</html>
